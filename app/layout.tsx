@@ -22,7 +22,7 @@ export default async function RootLayout({
   return (
     <SessionProvider session={session}>
       <html lang="en">
-        <body className={`${manrope.className} antialiased`}>{children}</body>
+        <body className={`${manrope.className} `}>{children}</body>
       </html>
     </SessionProvider>
   );
