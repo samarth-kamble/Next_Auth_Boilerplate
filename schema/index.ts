@@ -33,3 +33,7 @@ export const NewPasswordSchema = z.object({
     message: "Minimum of 6 characters required",
   }),
 });
+
+export const SettingsSchema = z.object({
+  name: z.optional(z.string()),
+})

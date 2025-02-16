@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
 import { auth } from "@/auth";
+import {Toaster} from "sonner";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -22,7 +23,10 @@ export default async function RootLayout({
   return (
     <SessionProvider session={session}>
       <html lang="en">
-        <body className={`${manrope.className} `}>{children}</body>
+        <body className={`${manrope.className} `}>
+        <Toaster closeButton richColors={true} position={"top-right"}/>
+        {children}
+        </body>
       </html>
     </SessionProvider>
   );
