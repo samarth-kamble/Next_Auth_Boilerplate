@@ -13,7 +13,7 @@ export default function Home() {
           A simple authentication system using Next.js.
         </p>
         <div>
-          <LoginButton mode={"modal"} asChild>
+          <LoginButton asChild>
             <Button variant={"secondary"} size={"lg"}>
               Sign In
             </Button>
